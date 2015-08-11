@@ -1,16 +1,35 @@
 body {
   font-family: 'Avenir', sans-serif;
+  font-size: 120%;
+  color: #4D4D4D;
 }
 
 h1 {
   font-family: 'Georgia', bold;
   text-align: center;
   font-size: 300%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color:
+  color: #102998;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 nav {
   text-align: center;
+}
+
+a {
+  color: #4D4D4D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #102998;
+}
+
+footer {
+  font-size: 70%;
+  text-align: center;
+  line-height: 100%;
+  margin: 20px;
 }
