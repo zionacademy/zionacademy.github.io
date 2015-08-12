@@ -17,10 +17,10 @@ h1 {
 }
 
 nav {
-  background-color: #102998;
-  background: linear-gradient(bottom, rgba(255,255,255,0), rgba(247,224,181,1));
-  background: -webkit-linear-gradient(bottom, rgba(255,255,255,0), rgba(247,224,181,1));
-  background: -moz-linear-gradient(bottom, rgba(255,255,255,0), rgba(247,224,181,1));
+  background-color: #FFED63;
+  background: linear-gradient(bottom, rgba(255,255,255,0), rgba(255, 237, 99,0.6));
+  background: -webkit-linear-gradient(bottom, rgba(255,255,255,0), rgba(255, 237, 99,0.6));
+  background: -moz-linear-gradient(bottom, rgba(255,255,255,0), rgba(255, 237, 99,0.6));
   color: #102998;
   padding: 1em;
   margin: 0 0  0.5em 0;
@@ -47,15 +47,15 @@ section {
 }
 
 h2 {
-  background-color: #F7E0B5;
-  background: linear-gradient(bottom, rgba(247,224,181,1), rgba(255,255,255,0));
-  background: -webkit-linear-gradient(bottom, rgba(247,224,181,1), rgba(255,255,255,0));
-  background: -moz-linear-gradient(bottom, rgba(247,224,181,1), rgba(255,255,255,0));
+  background-color: #FFED63;
+  background: linear-gradient(bottom, rgba(255,237,99,0.6), rgba(255,255,255,0));
+  background: -webkit-linear-gradient(bottom, rgba(255,237,99,0.6), rgba(255,255,255,0));
+  background: -moz-linear-gradient(bottom, rgba(255,237,99,0.6), rgba(255,255,255,0));
   font-style: italic;
   font-size: 120%;
   color: #102998;
   line-height: 200%;
-  padding: 0 2em;
+  padding: 0 5%;
 }
 
 .banner {
@@ -93,10 +93,14 @@ h2 {
   background-position: 50% 50%;
 }
 p {
-  padding: 2em 5em;
+  padding: 2.5em 10%;
   line-height: 200%;
 }
-
+ol {
+  padding: 0em 10%;
+  line-height: 200%;
+  list-style: decimal;
+}
 footer {
   font-size: 70%;
   text-align: center;
