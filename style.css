@@ -53,42 +53,6 @@ h2 {
   padding: 2em 15% 0;
 }
 
-.banner {
-  height: 15em;
-  width: 100%;
-}
-
-#banner1 {
-  background: url("images/b1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-#banner2 {
-  background: url("images/b2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-#banner3 {
-  background: url("images/b3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-#banner4 {
-  background: url("images/b4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-#banner5 {
-  background: url("images/b5.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
 section {
   margin-bottom: 2em;
 }
@@ -109,4 +73,84 @@ footer {
   text-align: center;
   line-height: 100%;
   margin: 2%;
+}
+
+.banner {
+  height: 15em;
+  width: 100%;
+}
+#banner1 {
+  background: url("images/b1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner2 {
+  background: url("images/b2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner3 {
+  background: url("images/b3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner4 {
+  background: url("images/b4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner5 {
+  background: url("images/b5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner6 {
+  background: url("images/b6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner7 {
+  background: url("images/b7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner8 {
+  background: url("images/b8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner9 {
+  background: url("images/b9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#banner10 {
+  background: url("images/b10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+#banner11 {
+  background: url("images/b11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
