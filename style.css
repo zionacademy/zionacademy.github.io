@@ -22,7 +22,7 @@ nav {
   background: -webkit-linear-gradient(bottom, rgba(255,255,255,0), rgba(255, 237, 99,0.3));
   background: -moz-linear-gradient(bottom, rgba(255,255,255,0), rgba(255, 237, 99,0.3));
   color: #102998;
-  padding: 1em;
+  padding: 1em 10%;
   text-align: center;
   line-height: 150%;
 }
@@ -50,8 +50,7 @@ h2 {
   font-size: 120%;
   color: #102998;
   line-height: 200%;
-  padding: 0 15%;
-  padding-top: 2em;
+  padding: 2em 15% 0;
 }
 
 .banner {
@@ -93,6 +92,7 @@ h2 {
 section {
   margin-bottom: 2em;
 }
+
 p {
   padding: 0 15%;
   line-height: 200%;
@@ -108,5 +108,5 @@ footer {
   font-size: 70%;
   text-align: center;
   line-height: 100%;
-  margin: 20px;
+  margin: 2%;
 }
