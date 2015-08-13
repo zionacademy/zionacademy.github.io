@@ -161,3 +161,7 @@ footer {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+#dir {
+  width: 100%;
+  height: auto;
+}
