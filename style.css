@@ -53,18 +53,21 @@ h2 {
   padding: 2em 15% 0;
 }
 
+.noshade {
+  background-color: none;
+  background: none;
+}
+
 section {
   margin-bottom: 2em;
 }
 
-p {
+p, ol, ul {
   padding: 0 15%;
   line-height: 200%;
 }
 
 ol {
-  padding: 0 15%;
-  line-height: 200%;
   list-style: decimal;
 }
 
@@ -73,6 +76,10 @@ footer {
   text-align: center;
   line-height: 100%;
   margin: 2%;
+}
+
+#center {
+    text-align: center;
 }
 
 .banner {
