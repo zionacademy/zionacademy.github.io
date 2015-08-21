@@ -26,7 +26,7 @@ nav {
   line-height: 150%;
 }
 
-/* Inline Blocks used for nav links made up of more than 1 word */
+/* Inline Blocks used for nav links */
 .ib {
   display: inline-block;
 }
