@@ -4,6 +4,11 @@
     <title>Zion Academy</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
+    <!--import minified jquery-->
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
@@ -21,6 +26,17 @@
 
     <!--personalized stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
+  
+    <script>
+$(document).ready(function(){
+  $(".button-collapse").sideNav({
+    menuWidth: 240, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for
+    draggable: true // Choose whether you can drag to open on
+  });
+});
+    </script>
   </head>
 
 
@@ -46,7 +62,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li class="active">
                 <a href="" class="indigo-text">
-                  Home
+                  <i class="material-icons">home</i>
                 </a>
               </li>
               <li>
@@ -60,8 +76,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://za.quickschools.com"
-                  class="indigo-text waves-effect">
+                <a href="https://za.quickschools.com" class="indigo-text">
                   QuickSchools Portal
                 </a>
               </li>
@@ -76,24 +91,66 @@
                 </a>
               </li>
               <li>
-                <a href="contact.html" class="indigo-text waves-effect">
+                <a href="contact.html" class="indigo-text">
                   Contact Us
                 </a>
               </li>
             </ul>
 
-            <ul id="slide-out" class="side-nav">
-              <li><a href="about.html" class="subheader">About</a></li>
-              <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-              <li><div class="divider"></div></li>
-            </ul>
-          </div>
-        </div>
         </nav>
         </div> <!-- end navbar-fixed -->
 
-    <h1>
-      Zion Academy
+        <ul id="slide-out" class="side-nav">
+          <li><div class="divider"></div></li>
+          <li class="active">
+            <a href="" class="indigo-text subheader waves-effect">
+              Home
+            </a>
+          </li>
+          <li><div class="divider"></div></li>
+
+          <li><a href="about.html" class="indigo-text">About</a></li>
+          <li><a href="about.html#purpose">Our Purpose</a></li>
+          <li><a href="about.html#curriculum">Our Curriculum</a></li>
+          <li><a href="about.html#affiliation">Affiliation</a></li>
+          
+          <li><div class="divider"></div></li>
+          <li>
+            <a href="admissions.html" class="indigo-text">
+              Admissions
+            </a>
+          </li>
+          <li>
+            <a href="https://za.quickschools.com"
+               class="indigo-text waves-effect">
+              QuickSchools Portal
+            </a>
+          </li>
+          <li><div class="divider"></div></li>
+          <li>
+            <a href="payments.html" class="indigo-text">
+              Tuition & Payments
+            </a>
+          </li>
+          <li><div class="divider"></div></li>
+          <li>
+            <a href="calendar.html" class="indigo-text">
+              Calendar
+            </a>
+          </li>
+          <li><div class="divider"></div></li>
+          <li>
+            <a href="contact.html" class="indigo-text">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+        </div>
+        </div>
+
+
+        <h1>
+          Zion Academy
     </h1>
   </header>
 
