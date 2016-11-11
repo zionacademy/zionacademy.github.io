@@ -8,20 +8,23 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
 
-    <!-- materialize compiled and minified CSS --> 
+    <!--materialize compiled and minified CSS--> 
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
-    <!--Let browser know website is optimized for mobile-->
+    <!--let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--icons (like menu icon)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+
+    <!--personalized stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
 
-  <body class="grey-text">
+  <body class="grey-text text-darken-1">
     <!-- jquery --> <script 
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     </script>
@@ -31,29 +34,58 @@
       </script>
 
       <header class="section">
-        <div class="navbar">
+        <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper white">
             <img id="logo" class="brand-logo" src="images/zalogo.png">
-              <a href="#" data-activates="slide-out" 
-                class="button-collapse right hide-on-large">
-                <i class="material-icons indigo-text">menu</i>
-              </a>
+            <a href="#" 
+               data-activates="slide-out" 
+               class="button-collapse right hide-on-large">
+              <i class="material-icons indigo-text">menu</i>
+            </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li class="active"><a href="" 
-                  class="indigo-text">Home</a></li>
-              <li><a href="about.html" 
-                  class="indigo-text">About</a></li>
-              <li><a href="admissions.html" 
-                  class="indigo-text">Admissions</a></li>
-              <li><a href="https://za.quickschools.com" 
-                  class="indigo-text">QuickSchools Portal</a></li>
-              <li><a href="payments.html" 
-                  class="indigo-text">Tuition & Payments</a></li>
-              <li><a href="calendar.html" 
-                  class="indigo-text">Calendar</a></li>
-              <li><a href="contact.html" 
-                  class="indigo-text">Contact Us</a></li>
+              <li class="active">
+                <a href="" class="indigo-text">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="about.html" class="indigo-text">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="admissions.html" class="indigo-text">
+                  Admissions
+                </a>
+              </li>
+              <li>
+                <a href="https://za.quickschools.com"
+                  class="indigo-text waves-effect">
+                  QuickSchools Portal
+                </a>
+              </li>
+              <li>
+                <a href="payments.html" class="indigo-text">
+                  Tuition & Payments
+                </a>
+              </li>
+              <li>
+                <a href="calendar.html" class="indigo-text">
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a href="contact.html" class="indigo-text waves-effect">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+
+            <ul id="slide-out" class="side-nav">
+              <li><a href="about.html" class="subheader">About</a></li>
+              <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+              <li><div class="divider"></div></li>
             </ul>
           </div>
         </div>
