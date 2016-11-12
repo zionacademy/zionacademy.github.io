@@ -1,114 +1,198 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Zion Academy | Academic Calendar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<head>
-  <title>Zion Academy | Academic Calendar</title>
+    <!--import minified jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!--materialize compiled and minified CSS--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
-<body>
-  <nav>
-    <div class="ib">
-      <a href="index.html">Home</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="about.html" >About</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="admissions.html">Admissions</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="https://za.quickschools.com">QuickSchools Portal</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="payments.html">Tuition & Payments</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="" id="current">Calendar</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </nav>
+    <!--let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--icons (like menu icon)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--personalized stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+$(document).ready(function(){
+  $(".button-collapse").sideNav({
+    menuWidth: 240, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for
+    draggable: true // Choose whether you can drag to open on
+  });
+
+  $('.parallax').parallax();
+
+});
+    </script>
+  </head>
 
 
-  <header>
-    <h1>
-      <img id=logo src="images/zalogo.png">
-      Zion Academy
-    </h1>
-  </header>
+  <body class="grey-text ">
+    <!-- materialize compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!--fullscreen nav-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white">
+          <!--za logo-->
+          <img id="logo" class="brand-logo" src="images/zalogo.png">
 
+          <!--burger menu icon-->
+          <a href="#" 
+             data-activates="slide-out" 
+             class="button-collapse right hide-on-large">
+            <i class="material-icons indigo-text">menu</i>
+          </a>
 
-  <section id="academiccalendar">
-    <h2 class="noshade">Academic Calendar</h2>
-    <p> Below you will find the school calendar, which highlights school
-      session days, payment deadlines, and other important dates. Please
-      feel free to copy any event to your calendar.</p>
+          <!--links-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" class="indigo-text">Home</a></li>
+            <li><a href="about.html" class="indigo-text">About Us</a></li>
+            <li><a href="admissions.html" class="indigo-text">Admissions</a></li>
+            <li><a href="https://za.quickschools.com" class="indigo-text">QuickSchools Portal</a></li>
+            <li><a href="payments.html" class="indigo-text">Tuition & Payments</a></li>
+            <li class="active"><a href="" class="indigo-text">Calendar</a></li>
+            <li><a href="contact.html" class="indigo-text">Contact Us</a></li>
+          </ul>
+      </nav>
+        </div> <!-- end navbar-fixed -->
 
-    <div class="responsive-iframe-container" id="center">
-      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;
-      showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;
-      bgcolor=%23FFFFFF&amp;src=kerb.za%40zion.edu&amp;color=%232F6309&amp;
-      ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600"
-      frameborder="0" scrolling="no"></iframe>
-    </div>
-  </section>
+        <!--mobile nav-->
+        <ul id="slide-out" class="side-nav">
 
+          <li><a href="index.html" class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">home</i>Home</a></li>
 
-  <div class="banner" id="banner7"></div>
+          <li><a href="about.html" class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">info</i>About Us</a></li>
 
+          <li><a href="admissions.html" class="indigo-text">
+              <i class="material-icons indigo-text">school</i>Admissions</a></li>
 
-  <section id="importantdates">
-    <h2>Important Dates</h2>
-    <p>April 1: Application and Registration Deadlines<br>
-      All applications for new students and registrations for returning
-      students are due by April 1st.</p>
+          <li><a href="https://za.quickschools.com"
+                 class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">web</i>QuickSchools Portal</a></li>
 
-    <p>June 1: Registration Fee<br>
-      A <a href="payments.html#fees">Registration Fee</a> of $75 is due
-      for each student.
-    </p>
+          <li><a href="payments.html" class="indigo-text">
+              <i class="material-icons indigo-text">assignment_turned_in</i>Tuition & Payments</a></li>
 
-    <p>July 1: Book Payments Due<br>
-      <a href="payments.html#textbooks">Book Kit Costs</a> are due.</p>
+          <li class="active"><a href="" class="indigo-text">
+              <i class="material-icons indigo-text">date_range</i>Calendar</a></li>
 
-    <p>August 1:  First Tuition Payment Due<br>
-      Each successive tuition payment is due on the first of each month for
-      a total of ten months.</p>
-  </section>
+          <li><a href="contact.html" class="indigo-text">
+              <i class="material-icons indigo-text">call</i>Contact Us</a></li>
+        </ul>
 
+        <header>
+          <div class="container">
+            <div class="row center">
+              <h4 class="col s12">Academic<h2 class="orange-text">Calendar</h2></h4>
+            </div>
+          </div>
+        </header>
 
-  <div class="banner" id="banner8"></div>
+        <main>
+        <section id="academiccalendar" class="section">
+          <div class="container">
+            <h4 class="orange-text">Calendar</h4>
+            <p> Below you will find the school calendar, which 
+            highlights school session days, payment deadlines, 
+            and other important dates. Please feel free to copy 
+            any event to your calendar.</p>
 
+            <div class="card-panel">
+              <div class="responsive-iframe-container" id="center">
+                <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;
+                showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;
+                bgcolor=%23FFFFFF&amp;src=kerb.za%40zion.edu&amp;color=%232F6309&amp;
+                ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <section id="schoolsessions">
-    <h2>School Sessions</h2>
-    <p>The school year begins near the end of August, and ends near the
-      middle of June. School begins at 8:15 am and concludes at 2:45 pm,
-      with Kindergarten concluding at 12:00 noon. Parents drop off their
-      Grades 1-12 students by 8:10 am, and pick up by 2:50 pm.</p>
-  </section>
+        <div class="parallax-container">
+          <div class="parallax"><img src="images/b6.jpg"></div>
+        </div>
 
+        <section id="importantdates" class="section">
+          <div class="container">
+            <h4 class="orange-text">Important Dates</h4>
+            
+            <ul class="collection">
+              <li class="collection-item">
+                <h6 class="title orange-text">April 1: 
+                  Application and Registration Deadlines</h6>
+                <p>All applications for new students and registrations 
+                for returning students are due by April 1st.</p>
+              </li>
+              <li class="collection-item">
+                <h6 class="title orange-text">June 1: 
+                  Registration Fee</h6>
+                <p>A <a href="payments.html#fees" class="orange-text">
+                  Registration Fee</a> of $75 is due for each student.</p>
+              </li>
+              <li class="collection-item">
+                <h6 class="title orange-text">July 1: 
+                  Book Payments Due</h6>
+                <p> <a href="payments.html#textbooks" class="orange-text
+                  ">Book Kit Costs</a> are due.</p>
+              </li>
+              <li class="collection-item">
+                <h6 class="title orange-text">August 1: 
+                  First Tuition Payment Due</h6>
+                <p>Each successive tuition payment is due on the first 
+                of each month for a total of ten months.</p>
+              </li>
+            </ul>
 
-  <footer>
-    <p><br>
-      Zion Academy © 2016<br>
-      <a>info@zionacademy.org</a><br>
-      (607) 565 0885<br>
-      PO Box 70, 241 Glory Hill Road<br>
-      Waverly, NY, USA 14892</p>
-  </footer>
+          </div>
+        </section>
 
-</body>
+        <section id="schoolsessions" class="section">
+          <div class="container">
+            <h4 class="orange-text">School Sessions</h4>
+            <p>The school year begins near the end of August, and 
+            ends near the middle of June. School begins at 8:15 am 
+            and concludes at 2:45 pm, with Kindergarten concluding 
+            at 12:00 noon. Parents drop off their Grades 1-12 students 
+            by 8:10 am, and pick up by 2:50 pm.</p>
+          </div>
+        </section>
+        </main>
+
+        <footer class="page-footer orange lighten-1 white-text">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 white-text">
+                <h5>Zion Academy</h5>
+                <ul>
+                  <li><i class="tiny material-icons">phone</i>
+                    (607) 565 0885</li>
+                  <li><i class="tiny material-icons">email</i>
+                    info@zionacademy.org</li>
+                  <li><i class="tiny material-icons">place</i>
+                    PO Box 70, 241 Glory Hill Road</li>
+                  <li><i class="tiny material-icons">place</i>
+                    Waverly, NY, USA 14892</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2016 Zion Academy</div>
+          </div>
+        </footer>
+  </body>
 </html>
