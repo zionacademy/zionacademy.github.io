@@ -1,133 +1,211 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Zion Academy | Admissions </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<head>
-  <title>Zion Academy | Admissions</title>
+    <!--import minified jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!--materialize compiled and minified CSS--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
-<body>
-  <nav>
-    <div class="ib">
-      <a href="index.html">Home</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="about.html">About</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="" id="current">Admissions</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="https://za.quickschools.com">QuickSchools Portal</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="payments.html">Tuition & Payments</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="calendar.html">Calendar</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </nav>
+    <!--let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--icons (like menu icon)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--personalized stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+$(document).ready(function(){
+  $(".button-collapse").sideNav({
+    menuWidth: 240, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for
+    draggable: true // Choose whether you can drag to open on
+  });
+
+  $('.parallax').parallax();
+
+});
+    </script>
+  </head>
 
 
-  <header>
-    <h1>
-      <img id=logo src="images/zalogo.png">
-      Zion Academy
-    </h1>
-  </header>
+  <body class="grey-text text-darken-1">
+    <!-- materialize compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!--fullscreen nav-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white">
+          <!--za logo-->
+          <img id="logo" class="brand-logo" src="images/zalogo.png">
 
+          <!--burger menu icon-->
+          <a href="#" 
+             data-activates="slide-out" 
+             class="button-collapse right hide-on-large">
+            <i class="material-icons indigo-text">menu</i>
+          </a>
 
-  <section id="apply">
-    <h2 class="noshade">How to Apply</h2>
-    <p>If you are interested in enrolling your child for the next school
-      year, you will need to:</p>
+          <!--links-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" class="indigo-text">Home</a></li>
+            <li><a href="about.html" class="indigo-text">About Us</a></li>
+            <li class="active"><a href="" class="indigo-text">Admissions</a></li>
+            <li><a href="https://za.quickschools.com" class="indigo-text">QuickSchools Portal</a></li>
+            <li><a href="payments.html" class="indigo-text">Tuition & Payments</a></li>
+            <li><a href="calendar.html" class="indigo-text">Calendar</a></li>
+            <li><a href="contact.html" class="indigo-text">Contact Us</a></li>
+          </ul>
+      </nav>
+        </div> <!-- end navbar-fixed -->
 
-    <ol>
-      <li>Complete the <a href="#inquiryform">Inquiry Form</a> to let us know
-      you are interested in applying, if possible before March 1.</li>
-      <li>After receiving the Application Packet from Zion Academy, complete
-        the Application for Enrollment form for each student applying. Send
-        the form to Zion Academy by postal mail or deliver it by hand to
-        our office by April 1.</li>
-      <li>Provide current School Records from the current school, and from
-        home schooling by April 1. (A final Official School Record and
-        Transcript for the current year must be on file before the first
-        day of school at Zion Academy.)</li>
-      <li>Submit the $25 Family Application Fee with the completed applications
-      for your family by April 1.</li>
-      <li>Copy of the student’s Birth Certificate is required by April 1.</li>
-      <li>If accepted, pay the <a href="payments.html#fees">Registration Fee</a>
-        by June 1.</li>
-      <li>A record of all immunizations for each child is required to be
-        on file by the first day of school.</li>
-    </ol>
+        <!--mobile nav-->
+        <ul id="slide-out" class="side-nav">
 
-    <p>If you have any questions about the application process, please
-      feel free to <a href="contact.html">contact us.</a></p>
-  </section>
+          <li><a href="index.html" class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">home</i>Home</a></li>
 
+          <li><a href="about.html" class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">info</i>About Us</a></li>
 
-  <div class="banner" id="banner4"></div>
+          <li class="active"><a href="" class="indigo-text">
+              <i class="material-icons indigo-text">school</i>Admissions</a></li>
 
+          <li><a href="https://za.quickschools.com"
+                 class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">web</i>QuickSchools Portal</a></li>
 
-  <section id="dresscode">
-    <h2>Dress Code</h2>
-    <p>Uniforms are required for all students. The Dress Code explains the
-      guidelines in detail. Furthermore, all students keep a conservative
-      and modest standard in personal appearance.</p>
-  </section>
+          <li><a href="payments.html" class="indigo-text">
+              <i class="material-icons indigo-text">assignment_turned_in</i>Tuition & Payments</a></li>
 
+          <li><a href="calendar.html" class="indigo-text">
+              <i class="material-icons indigo-text">date_range</i>Calendar</a></li>
 
-  <section id="lunch">
-    <h2 class="noshade">Lunch Program</h2>
-    <p>Students may bring their own sack lunches or purchase lunch at the
-      school for $1.50. Milk and juice may be purchased for .25 cents for
-      students bringing their own lunch. School lunches are served in the
-      main cafeteria.</p>
-  </section>
+          <li><a href="contact.html" class="indigo-text">
+              <i class="material-icons indigo-text">call</i>Contact Us</a></li>
+        </ul>
 
+        <header>
+          <div class="container">
+            <div class="row center">
+              <h4 class="col s12">Applications and 
+                <h2 class="red-text text-lighten-2">Admissions</h2></h4>
+            </div>
+          </div>
+        </header>
 
-  <div class="banner" id="banner6"></div>
+        <main>
+        <section id="about" class="section">
+          <div class="container">
+            <h4 class="red-text text-lighten-2">How to Apply</h4>
+            <p class="flow-text">If you are interested in enrolling your child for the 
+            next school year, you will need to:</p>
+            <ol>
+              <li><p class="flow-text">Complete the <a href="#inquiryform" class="red-text
+                  text-lighten-2">Inquiry Form</a> 
+                to let us know you are interested in applying, if 
+                possible before March 1.</p></li>
+              <li><p class="flow-text">After receiving the Application Packet from Zion 
+                Academy, complete the Application for Enrollment form 
+                for each student applying. Send the form to Zion 
+                Academy by postal mail or deliver it by hand to our 
+                office by April 1.</p></li>
+              <li><p class="flow-text">Provide current School Records from the current 
+                school, and from home schooling by April 1. A final 
+                Official School Record and Transcript for the current 
+                year must be on file before the first day of school at 
+                Zion Academy.</p></li>
+              <li><p class="flow-text">Submit the $25 Family Application Fee with the 
+                completed applications for your family by April 1.</p></li>
+              <li><p class="flow-text">Copy of the student’s Birth Certificate is required by 
+                April 1.</p></li>
+              <li><p class="flow-text">If accepted, pay the <a href="payments.html#fees"
+                  class="red-text text-lighten-2">Registration Fee</a>
+                by June 1.</p></li>
+              <li><p class="flow-text">A record of all immunizations for each child is 
+                required to be on file by the first day of school.</p></li>
+            </ol>
+            <p class="flow-text">If you have any questions about the application process,
+            please feel free to <a href="contact.html" class="red-text
+              text-lighten-2">contact us.</a></p>
+        </section>
+          </div>
+        </section>
 
+        <section id="dresscode" class="section">
+          <div class="container">
+            <h4 class="red-text text-lighten-2">Dress Code</h4>
+            <p class="flow-text">Uniforms are required for all students. The Dress 
+            Code explains the guidelines in detail. Furthermore, 
+            all students keep a conservative and modest standard 
+            in personal appearance</p>
+          </div>
+        </section>
 
-  <section id="inquiryform">
-    <h2>Inquiry Form</h2>
-    <p>If you are seeking to apply to Zion Academy, please fill out and
-      submit the online form below. (Form may take some time to load) </p>
+        <div class="parallax-container">
+          <div class="parallax"><img src="images/b5.jpg"></div>
+        </div>
 
-    <div id="form">
-      <div id="enquiry-form"></div>
-      <div class="qsstandalone-footnote" id="enquiry-footer">Form powered by
-        <a href="http://www.quickschools.com" target="_blank">QuickSchools.com
-          - School Management System</a></div>
-          <script
-          src="https://za.quickschools.com/sms/es/enquiry?divId=enquiry-form"
-          async></script>
-    </div>
-  </section>
+        <section id="lunch" class="section">
+          <div class="container">
+            <h4 class="red-text text-lighten-2">Lunch Program</h4>
+            <p class="flow-text">Students may bring their own sack lunches or purchase 
+            lunch at the school for $1.50. Milk and juice may be 
+            purchased for .25 cents for students bringing their own 
+            lunch. School lunches are served in the main cafeteria.</p>
+          </div>
+        </section>
 
+        <section id="inquiryform" class="section">
+          <div class="container">
+            <h4 class="red-text text-lighten-2">Inquiry Form</h4>
+            <p class="flow-text">If you are seeking to apply to Zion Academy, please 
+            fill out and submit the online form below. (Form may take 
+            some time to load)</p>
 
-  <footer>
-    <p><br>
-      Zion Academy © 2016<br>
-      <a>info@zionacademy.org</a><br>
-      (607) 565 0885<br>
-      PO Box 70, 241 Glory Hill Road<br>
-      Waverly, NY, USA 14892</p>
-  </footer>
+            <div class="card-panel s12">
+              <div id="enquiry-form"></div>
+              <div class="qsstandalone-footnote" id="enquiry-footer"> Form powered by 
+                <a href="http://www.quickschools.com" target="_blank"
+                  class="red-text text-lighten-2">
+                  QuickSchools.com - School Management System</a>
+              </div>
+              <script src="https://za.quickschools.com/sms/es/enquiry?divId=enquiry-form" async></script>
+            </div>
+          </div>
+        </section>
+        </main>
 
-</body>
+        <footer class="page-footer red lighten-2 white-text">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 white-text">
+                <h5>Zion Academy</h5>
+                <ul>
+                  <li><i class="tiny material-icons">phone</i>
+                    (607) 565 0885</li>
+                  <li><i class="tiny material-icons">email</i>
+                    info@zionacademy.org</li>
+                  <li><i class="tiny material-icons">place</i>
+                    PO Box 70, 241 Glory Hill Road</li>
+                  <li><i class="tiny material-icons">place</i>
+                    Waverly, NY, USA 14892</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2016 Zion Academy</div>
+          </div>
+        </footer>
+  </body>
 </html>
