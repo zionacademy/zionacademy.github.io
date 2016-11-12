@@ -6,7 +6,7 @@
 
     <!--import minified jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
+
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -15,13 +15,13 @@
 
     <!--let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
+
     <!--icons (like menu icon)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--personalized stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
-  
+
     <script>
 $(document).ready(function(){
   $(".button-collapse").sideNav({
@@ -30,6 +30,9 @@ $(document).ready(function(){
     closeOnClick: true, // Closes side-nav on <a> clicks, useful for
     draggable: true // Choose whether you can drag to open on
   });
+
+  $('.parallax').parallax();
+
 });
     </script>
   </head>
@@ -37,39 +40,37 @@ $(document).ready(function(){
 
   <body class="grey-text text-darken-1">
     <!-- materialize compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!--fullscreen nav-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white">
+          <!--za logo-->
+          <img id="logo" class="brand-logo" src="images/zalogo.png">
 
-      <header class="section">
-        <!--fullscreen nav-->
-        <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper white">
-            <!--za logo-->
-            <img id="logo" class="brand-logo" src="images/zalogo.png">
+          <!--burger menu icon-->
+          <a href="#" 
+             data-activates="slide-out" 
+             class="button-collapse right hide-on-large">
+            <i class="material-icons indigo-text">menu</i>
+          </a>
 
-            <!--burger menu icon-->
-            <a href="#" 
-               data-activates="slide-out" 
-               class="button-collapse right hide-on-large">
-              <i class="material-icons indigo-text">menu</i>
-            </a>
-            
-            <!--links-->
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li class="active"><a href="" class="indigo-text">Home</a></li>
-              <li><a href="about.html" class="indigo-text">About Us</a></li>
-              <li><a href="admissions.html" class="indigo-text">Admissions</a></li>
-              <li><a href="https://za.quickschools.com" class="indigo-text">QuickSchools Portal</a></li>
-              <li><a href="payments.html" class="indigo-text">Tuition & Payments</a></li>
-              <li><a href="calendar.html" class="indigo-text">Calendar</a></li>
-              <li><a href="contact.html" class="indigo-text">Contact Us</a></li>
-            </ul>
-        </nav>
+          <!--links-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="" class="indigo-text">Home</a></li>
+            <li><a href="about.html" class="indigo-text">About Us</a></li>
+            <li><a href="admissions.html" class="indigo-text">Admissions</a></li>
+            <li><a href="https://za.quickschools.com" class="indigo-text">QuickSchools Portal</a></li>
+            <li><a href="payments.html" class="indigo-text">Tuition & Payments</a></li>
+            <li><a href="calendar.html" class="indigo-text">Calendar</a></li>
+            <li><a href="contact.html" class="indigo-text">Contact Us</a></li>
+          </ul>
+      </nav>
         </div> <!-- end navbar-fixed -->
-    
+
         <!--mobile nav-->
         <ul id="slide-out" class="side-nav">
-          
+
           <li class="active">
             <a href="" class="indigo-text waves-effect">
               <i class="material-icons indigo-text">home</i>Home</a></li>
@@ -81,7 +82,7 @@ $(document).ready(function(){
               <i class="material-icons indigo-text">school</i>Admissions</a></li>
 
           <li><a href="https://za.quickschools.com"
-               class="indigo-text waves-effect">
+                 class="indigo-text waves-effect">
               <i class="material-icons indigo-text">web</i>QuickSchools Portal</a></li>
 
           <li><a href="payments.html" class="indigo-text">
@@ -94,33 +95,29 @@ $(document).ready(function(){
               <i class="material-icons indigo-text">call</i>Contact Us</a></li>
         </ul>
 
-        <h1>
-          Zion Academy
-    </h1>
-  </header>
+        <div class="container">
+        <header class="row center">
+          <h4 class="col s12">Welcome to<h2 class="blue-text">Zion Academy</h2></h4>
+        </header>
 
 
-  <section>
-    <p id="center"> We are a Christian K-12 School located in Waverly, New
-      York providing an excellent education and instilling a relationship
-      with the Lord Jesus Christ.</p>
-  </section>
+        <section class="section">
+          <p id="center"> We are a Christian K-12 School located in Waverly, New
+          York providing an excellent education and instilling a relationship
+          with the Lord Jesus Christ.</p>
+        </section>
+        </div>
+
+        <img id="entranceimg" src="images/mainbanner.jpg"></img>
+        <footer>
+          <p><br>
+          Zion Academy © 2016<br>
+          <a>info@zionacademy.org</a><br>
+          (607) 565 0885<br>
+          PO Box 70, 241 Glory Hill Road<br>
+          Waverly, NY, USA 14892</p>
+        </footer>
 
 
-    <div class="banner" id="mainbanner">
-      <div id="shade"></div>
-    </div>
-
-
-    <footer>
-      <p><br>
-        Zion Academy © 2016<br>
-        <a>info@zionacademy.org</a><br>
-        (607) 565 0885<br>
-        PO Box 70, 241 Glory Hill Road<br>
-        Waverly, NY, USA 14892</p>
-    </footer>
-
-
-</body>
+  </body>
 </html>
