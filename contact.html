@@ -1,99 +1,210 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Zion Academy | Contact Us</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<head>
-  <title>Zion Academy | Contact Us</title>
+    <!--import minified jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!--materialize compiled and minified CSS--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
-<body>
-  <nav>
-    <div class="ib">
-      <a href="index.html">Home</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="about.html">About</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="admissions.html">Admissions</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="https://za.quickschools.com">QuickSchools Portal</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="payments.html">Tuition & Payments</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="calendar.html">Calendar</a>
-    </div>
-    |
-    <div class="ib">
-      <a href="contact.html" id="current">Contact Us</a>
-    </div>
-  </nav>
+    <!--let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--icons (like menu icon)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--personalized stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+$(document).ready(function(){
+  $(".button-collapse").sideNav({
+    menuWidth: 240, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for
+    draggable: true // Choose whether you can drag to open on
+  });
+
+  $('.parallax').parallax();
+
+});
+    </script>
+  </head>
 
 
-  <header>
-    <h1>
-      <img id=logo src="images/zalogo.png">
-      Zion Academy
-    </h1>
-  </header>
+  <body class="grey-text text-darken-1">
+    <!-- materialize compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!--fullscreen nav-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white">
+          <!--za logo-->
+          <img id="logo" class="brand-logo" src="images/zalogo.png">
 
+          <!--burger menu icon-->
+          <a href="#" 
+             data-activates="slide-out" 
+             class="button-collapse right hide-on-large">
+            <i class="material-icons indigo-text">menu</i>
+          </a>
 
-  <section id="contactinfo">
-    <h2 class="noshade">Contact Information</h2>
-    <p>Mailing Address:</p>
-    <ul>
-      <li>Zion Academy</li>
-      <li>PO Box 70</li>
-      <li>241 Glory Hill Road</li>
-      <li>Waverly, NY 14892</li>
-    </ul>
-    <p>Phone Number: (607) 565 0885</p>
-    <p>Fax Number: (607) 565 3329</p>
-    <p>E-mail Address: <a>info@zionacademy.org</a></p>
-  </section>
+          <!--links-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" class="indigo-text">Home</a></li>
+            <li><a href="about.html" class="indigo-text">About Us</a></li>
+            <li><a href="admissions.html" class="indigo-text">Admissions</a></li>
+            <li><a href="https://za.quickschools.com" class="indigo-text">QuickSchools Portal</a></li>
+            <li><a href="payments.html" class="indigo-text">Tuition & Payments</a></li>
+            <li><a href="calendar.html" class="indigo-text">Calendar</a></li>
+            <li class="active"><a href="" class="indigo-text">Contact Us</a></li>
+          </ul>
+      </nav>
+        </div> <!-- end navbar-fixed -->
 
+        <!--mobile nav-->
+        <ul id="slide-out" class="side-nav">
 
-  <div class="banner" id="banner9"></div>
+          <li><a href="index.html" class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">home</i>Home</a></li>
 
-  <section id="directions">
-    <h2>Directions</h2>
-    <p>Take I-86 (Route 17) to Waverly Exit 60 (Route 220 Exit). Go north
-      on Route 220, until it ends. Turn left onto Rt 17C. Drive up the hill
-      until you see O’Brien’s Inn on the left. On the right, you will see
-      the sign and entrance for Zion Fellowship. Drive to the very top of
-      the hill.</p>
-    <br>
-    <p><img id="dir" src="images/dir.png"></p>
-    <br>
-    <p>Drive up Zion Road to the top of the hill until you see ZFI
-      headquarters. If you are going to the Zion Academy classrooms, turn
-      left to the ZA parking lot. Otherwise, if you are going to the Zion
-      Academy offices or visiting while school is not in session, continue
-      driving and park by the railing to enter through the main lobby of
-      the Zion Fellowship building.</p>
-  </section>
+          <li><a href="" class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">info</i>About Us</a></li>
 
+          <li><a href="admissions.html" class="indigo-text">
+              <i class="material-icons indigo-text">school</i>Admissions</a></li>
 
-  <footer>
-    <p><br>
-      Zion Academy © 2016<br>
-      <a>info@zionacademy.org</a><br>
-      (607) 565 0885<br>
-      PO Box 70, 241 Glory Hill Road<br>
-      Waverly, NY, USA 14892</p>
-  </footer>
+          <li><a href="https://za.quickschools.com"
+                 class="indigo-text waves-effect">
+              <i class="material-icons indigo-text">web</i>QuickSchools Portal</a></li>
 
-</body>
+          <li><a href="payments.html" class="indigo-text">
+              <i class="material-icons indigo-text">assignment_turned_in</i>Tuition & Payments</a></li>
+
+          <li><a href="calendar.html" class="indigo-text">
+              <i class="material-icons indigo-text">date_range</i>Calendar</a></li>
+
+          <li class="active"><a href="" class="indigo-text">
+              <i class="material-icons indigo-text">call</i>Contact Us</a></li>
+        </ul>
+
+        <header>
+          <div class="container">
+            <div class="row center">
+              <h4 class="col s12">Directions and <h2 class="deep-purple-text
+              text-lighten-1">Contact Information</h2></h4>
+            </div>
+          </div>
+        </header>
+
+        <main>
+        <section id="contactinfo" class="section">
+          <div class="container">
+            <h4 class="deep-purple-text text-lighten-1">Contact Us</h4>
+            <div class="row">
+
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title deep-purple-text text-lighten-1">
+                      Mailing Address</span>
+                    <ul class="flow-text">
+                      <li>Zion Academy</li>
+                      <li>PO Box 70</li>
+                      <li>241 Glory Hill Road</li>
+                      <li>Waverly, NY 14892</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title deep-purple-text text-lighten-1">
+                      Phone Number</span>
+                    <p class="flow-text">(607) 565 0885</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title deep-purple-text text-lighten-1">
+                      Fax Number</span>
+                    <p class="flow-text">(607) 565 3329</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title deep-purple-text text-lighten-1">
+                      E-mail Address</span>
+                    <p class="flow-text">info@zionacademy.org</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>  
+          </div>
+        </section>
+
+        <div class="parallax-container">
+          <div class="parallax"><img src="images/b9.jpg"></div>
+        </div>
+
+        <section id="directions" class="section">
+          <div class="container">
+            <h4 class="deep-purple-text text-lighten-1">Directions</h4>
+            <p class="flow-text">
+            Take I-86 (Route 17) to Waverly Exit 60 (Route 220 Exit). 
+            Go north on Route 220, until it ends. Turn left onto Rt 17C. 
+            Drive up the hill until you see O’Brien’s Inn on the left. 
+            On the right, you will see the sign and entrance for Zion 
+            Fellowship. Drive to the very top of the hill.</p>
+            
+
+            <div class="card-panel">
+              <img class="img" src="images/dir.png">
+            </div>
+            
+            <p class="flow-text">
+            Drive up Zion Road to the top of the hill until you see ZFI 
+            headquarters. If you are going to the Zion Academy classrooms, 
+            turn left to the ZA parking lot. Otherwise, if you are going to 
+            the Zion Academy offices or visiting while school is not in
+            session, continue driving and park by the railing to enter 
+            through the main lobby of the Zion Fellowship building.</p>
+          </div>
+        </section>
+        </main>
+
+        <footer class="page-footer deep-purple lighten-1 white-text">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 white-text">
+                <h5>Zion Academy</h5>
+                <ul>
+                  <li><i class="tiny material-icons">phone</i>
+                    (607) 565 0885</li>
+                  <li><i class="tiny material-icons">email</i>
+                    info@zionacademy.org</li>
+                  <li><i class="tiny material-icons">place</i>
+                    PO Box 70, 241 Glory Hill Road</li>
+                  <li><i class="tiny material-icons">place</i>
+                    Waverly, NY, USA 14892</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2016 Zion Academy</div>
+          </div>
+        </footer>
+  </body>
 </html>

@@ -1,203 +1,24 @@
-@charset "UTF-8"
-body {
-  font-family: 'Avenir', sans-serif;
-  font-size: 150%;
-  color: #4D4D4D;
-}
+@charset "UTF-8";
 
-h1 {
-  font-family: 'Georgia', serif;
-  text-align: center;
-  font-size: 300%;
-  color: #102998;
-  padding: 0.5em 10% 1.5em;
+/* index.html cover photo*/
+.img {
+  width: 100%;
+  height: auto;
+  
 }
 
 #logo {
-  width: 1.5em;
-}
-
-nav {
-  background: linear-gradient(bottom, white, #FFF9D4);
-  background: -webkit-linear-gradient(bottom, white, #FFF9D4);
-  background: -moz-linear-gradient(bottom, white, #FFF9D4);
-  color: #102998;
-  padding: 1em 10%;
-  text-align: center;
-  line-height: 150%;
-}
-
-/* Inline Blocks used for nav links */
-.ib {
-  display: inline-block;
-}
-
-a {
-  color: #102998;
-  text-decoration: none;
-}
-
-/* The current anchor in the nav stands out */
-#current {
-  color: #4D4D4D;
-  font-style: italic;
-}
-
-a:hover {
-  color: #4D4D4D;
-}
-
-h2 {
-  background: linear-gradient(bottom, white, #FFF9D4);
-  background: -webkit-linear-gradient(bottom, white, #FFF9D4);
-  background: -moz-linear-gradient(bottom, white, #FFF9D4);
-  font-style: italic;
-  font-size: 120%;
-  color: #102998;
-  line-height: 200%;
-  padding: 2em 15% 0;
-}
-
-/* For h2s that do not require shading or extra space*/
-.noshade {
-  background: none;
-  padding-top: 0;
-}
-
-section {
-  margin-bottom: 2em;
-}
-
-p {
-  padding: 0 15% 1em;
-  line-height: 200%;
-}
-
-ol,ul {
-  padding: 0 20%;
-  line-height: 200%;
-  margin-bottom: 1em;
-}
-
-ol {
-  list-style: decimal;
-}
-
-footer {
-  font-size: 70%;
-  text-align: center;
-  line-height: 100%;
-  margin: 2%;
-}
-
-/* index.html cover photo*/
-#mainbanner {
-  height: 30em;
-  width: 100%;
-  background: url("images/mainbanner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#shade {
-  height: inherit;
-  width: inherit;
-  background: linear-gradient(bottom, rgba(255,255,255,0), white);
-  background: -webkit-linear-gradient(bottom, rgba(255,255,255,0), white);
-  background: -moz-linear-gradient(bottom, rgba(255,255,255,0), white);
-}
-
-/* Banners used throughout the site*/
-.banner {
-  height: 15em;
-  width: 100%;
-}
-
-#banner1 {
-  background: url("images/b1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner2 {
-  background: url("images/b2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner3 {
-  background: url("images/b3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner4 {
-  background: url("images/b4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner5 {
-  background: url("images/b5.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner6 {
-  background: url("images/b6.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner7 {
-  background: url("images/b7.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner8 {
-  background: url("images/b8.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-#banner9 {
-  background: url("images/b9.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-/*Proper spacing for application form in admission.html*/
-#form {
-  margin: 0 15%;
-}
-/*For map to ZA in contact.html*/
-#dir {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
 }
 
 /*For Google Calendar in calendar.html*/
 .responsive-iframe-container {
     position: relative;
-    padding: 30px 0 56.25%;
+    padding: 30px 0 70%;
     height: 0;
-    margin: 0 15%;
+    margin: 0;
     overflow: hidden;
-}
-
-#center {
-    text-align: center;
 }
 
 .responsive-iframe-container iframe,
@@ -208,4 +29,9 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* override material disabling select*/
+select {
+    display: inline;
 }
